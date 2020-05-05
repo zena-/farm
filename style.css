@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Fredericka+the+Great&family=Indie+Flower&display=swap');
+
+.onda{
+	font-family: 'Fredericka the Great', cursive;
+	margin: 5px auto;
+	color: burlywood;
+    font-size: 85px;
+}
+
+.h3{
+	font-family: 'Fredericka the Great', cursive;
+	margin: 50px;
+	color: burlywood;
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+
+.about{
+	font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    margin: 50px;
+}
+
+#mapid { 
+	height: 400px;
+    width: 95%;
+    margin: 40px auto;
+}
+
+hr {margin: 60px;}
+
+ul{
+	list-style-type: none;
+}
+
+.inner {
+	font-family: 'Indie Flower', cursive;
+	padding: 3px 7px;
+    font-size: 60px;
+    cursor: pointer;
+}
+img {
+ 	height: auto;
+    display: none;
+    width: 384px;
+    position: absolute;
+}
+.inner:hover {color: cadetblue;}
+.inner:hover img {
+  display: block;
+}
+.cow{ 
+	left: 150px;
+    top: 875px;
+}
+.chick{ 
+	left: 150px;
+    top: 875px; 
+}
+.sheep{ 
+	left: 870px; 
+	top: 875px; 
+}
+.pig{ 
+	left: 870px; 
+	top: 875px; 
+}
+
+.shop{
+	font-family: 'Amatic SC', cursive;
+	padding: 3px 7px;
+    font-size: 60px;
+    cursor: pointer;
+}
+.img {
+    height: auto;
+    display: none;
+    width: 600px;
+    position: absolute;
+    left: 500px;
+    bottom: -1100px;
+}
+.shop:hover {
+	color: darkolivegreen;
+	text-decoration: overline;
+}
+.shop:hover .img {
+  display: block;
+  right: 300px;
+}
+
+
+
