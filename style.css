@@ -3,23 +3,42 @@
 .onda{
 	font-family: 'Fredericka the Great', cursive;
 	margin: 5px auto;
-	color: burlywood;
+	color: darkolivegreen;
     font-size: 85px;
 }
 
-.h3{
-	font-family: 'Fredericka the Great', cursive;
-	margin: 50px;
-	color: burlywood;
-    font-size: 45px;
-    letter-spacing: 5px;
+.modal-body, .modal-title, .btn-secondary {
+	font-family: 'Indie Flower', cursive;
+}
+.modal {
+	transform-style: preserve-3d;
+}
+.modal .modal-body{
+	transform: perspective(100px) translateZ(13px);
+    filter: drop-shadow(2px 4px 6px black);
+    padding: 35px;
+}
+.rotate{
+  animation: rotate 17s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotate{
+  0% {
+  transform: perspective(1000px) rotateY(15deg);
+  }
+  50%{
+  transform: perspective(1000px) rotateX(10deg);
+  }
+  100% {
+  transform: perspective(1000px) rotateY(15deg);
+  }
 }
 
 .greeting a:link, a:visited {
 	color: black;
 }
 .greeting a:hover, a:active {
-	color: burlywood;
+	color: darkolivegreen;
 }
 .about{
 	font-family: 'Indie Flower', cursive;
@@ -31,16 +50,31 @@
 	font-family: 'Indie Flower', cursive;
 	margin: 10px;
     font-size: 40px;
-    border: 1px solid;
     width: 190px;
     position: absolute;
     right: 14px;
+    border-radius: 20px;
+    box-shadow: -2px -2px 8px rgba(225,225,225,1),
+                -2px -2px 12px rgba(225,225,225,0.5),
+                inset 2px 2px 4px rgba(225,225,225,0.1),
+                2px 2px 8px rgba(0,0,0,0.15);
+}
+.listyou:hover {
+    box-shadow: inset -2px -2px 8px rgba(225,225,225,1),
+                inset -2px -2px 12px rgba(225,225,225,0.5),
+                inset 2px 2px 4px rgba(225,225,225,0.1),
+                inset 2px 2px 8px rgba(0,0,0,0.15);
 }
 
 #mapid { 
 	height: 35rem;
     width: 80%;
     margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: inset -2px -2px 8px rgba(225,225,225,1),
+                inset -2px -2px 12px rgba(225,225,225,0.5),
+                inset 2px 2px 4px rgba(225,225,225,0.1),
+                inset 2px 2px 8px rgba(0,0,0,0.15);
 }
 
 hr {
@@ -77,14 +111,15 @@ hr {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    left: 22rem;
+    /*left: 22rem;*/
     width: max-content;
+    margin: 4px auto;
 }
 .icon ul li {
     position: relative;
     list-style: none;
     text-align: center;
-    margin: 4px;
+    margin: 4px auto;
 }
 .icon ul li label {
 	position: relative;
@@ -136,13 +171,9 @@ footer{
 }
 .deep{
 	font-size: 2rem;
-    border-radius: 37px;
+    border-radius: 20px;
     padding: 0px 17px;
     background: linear-gradient(90deg, #ffffff 21.1%, #dee2e5 69%);
-    box-shadow: -2px -2px 8px rgba(225,225,225,1),
-                -2px -2px 12px rgba(225,225,225,0.5),
-                inset 2px 2px 4px rgba(225,225,225,0.1),
-                2px 2px 8px rgba(0,0,0,0.15);
 }
 .deep:hover {
     box-shadow: inset -2px -2px 8px rgba(225,225,225,1),

@@ -17,8 +17,29 @@
 	<div class="row">
 		<h2 class="onda col-6">Better <br> MeatMap</h2>
 		<div class="col yourFarm">
-			<p class="listyou text-center">List your farm</p>
+			<p class="listyou text-center" data-toggle="modal" data-target="#exampleModal">List your farm</p>
 		</div>
+	</div>
+
+	<div class="modal fade rotate" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Tell us more about your farm</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        Please send a detailed email to <a href="mailto:Better@MeatMap.com?subject=Add my farm">Better@MeatMap.com</a> <br>
+	        Message must include the name of the farm, the exact address, a list of animals on the farm and meat that you sell, a list restaurants and shops that carrie your meat, as well as anything else that may be helpful like non-gmo, organic, etc. <br><br>
+	        Thank You
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 
 	<section class="maps">
