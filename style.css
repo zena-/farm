@@ -15,78 +15,112 @@
     letter-spacing: 5px;
 }
 
+.greeting a:link, a:visited {
+	color: black;
+}
+.greeting a:hover, a:active {
+	color: burlywood;
+}
 .about{
 	font-family: 'Indie Flower', cursive;
-    font-size: 20px;
-    margin: 50px;
+    font-size: 40px;
+    margin: 50px auto;
+}
+.listyou{
+	font-family: 'Indie Flower', cursive;
+	margin: 10px;
+    font-size: 40px;
+    border: 1px solid;
+    width: 190px;
+    position: absolute;
+    right: 14px;
 }
 
 #mapid { 
-	height: 400px;
+	height: 40rem;
     width: 95%;
     margin: 40px auto;
 }
 
-hr {margin: 60px;}
-
-ul{
-	list-style-type: none;
+hr {
+	margin: 37px auto !important;
+	width: 71rem;
+    /*margin-left: auto;
+    margin-right: auto;*/
 }
 
-.inner {
-	font-family: 'Amatic SC', cursive;
-	padding: 3px 7px;
-    font-size: 60px;
+.farmImg{
+	border-radius: 50px;
+	/*background: url('https://lh3.googleusercontent.com/GJ-Pax_4LyNa2CEYSMd2DNUxnkg7FHqNsD6YlzWtD4QO0Yi2wDakFBGieM24k_FVIra0NPkXUcKr8X3iQSAnCtzr8gSMY4PWkIbFIr9VS7rO0opM0i7eCwM_iSwEtglARZJW2-Y8au79Asj-HyjWGdhm38msEdk_HaiySvqRM1Clui8LoLdoUF1kBmkhWZg9EPDvwloL3X-7mncm4SmP0vpgnE6dBju0UUDSCKS1KGraVjEQ3lXHD9Excrft0ocyrsVw6TdkMkhSMpbfnHz9pLJQgsWsuuFryY0mdx2lb0Y3oTQV7-rnXhpMXTGpB5le-rGwgSjiziSJtyEgPP0tRDhxIyFI-ckeT7WVoUlGiKw2nSGSFdiw0IGKt3JMrAYPkru-0qHz6Ph1HmKLh18ziuMEpQHELEA4L-DB8h2YLJP5KsZz0ZQe25K_3tAjXU1R6TwNXxt0YjObrqPKqRBowJ6S60aZk-_t6UeBZvMfj5WgjUZ_4kjCkHKA3jeIxOY2hSNyZ0zLyGOqmnjQtUfbBYRbwRBbBqMKd_eJymbwFOYy1iLhODTtnk6zjQVdO62C85VztJRYXRDGsIqRmkhyxj9By4mGr70CQMsGJLSkLUTXyQbeyRcB-EnVb6OmJUvAzSVimHqOR3RY2AFXSnSoKqs3flS4-94h4Y7e8T7L1YJQ3eX5T0sGpr4iVmEx=w1600-h1200-no?authuser=1');*/
+	width: 120px;
+	height: 120px;
+}
+.shopImg{
+	border-radius: 50px;
+	/*background: url('https://cdn.torontolife.com/wp-content/uploads/2019/07/toronto-butcher-shop-chantecler-boucherie-parkdale-space.jpg');*/
+	width: 120px;
+	height: 120px;
+}
+.restImg{
+	border-radius: 50px;
+	/*background: url('https://static-friendbuy-com.s3.amazonaws.com/widget/butcher-box/landing-page/img/mobile_bg.jpg');*/
+	width: 120px;
+	height: 120px;
+}
+
+.icon ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    left: 22rem;
+    width: max-content;
+}
+.icon ul li {
+    position: relative;
+    list-style: none;
+    text-align: center;
+    margin: 4px;
+}
+.icon ul li label {
+	position: relative;
+	margin-right: 50px;
+}
+.icon ul li label input{
+    position: absolute;
+    opacity: 0;
     cursor: pointer;
 }
-img {
- 	height: auto;
-    display: none;
-    width: 384px;
-    position: absolute;
-}
-.inner:hover {color: cadetblue;}
-.inner:hover img {
-  display: block;
-}
-.cow{ 
-	left: 150px;
-    top: 875px;
-}
-.chick{ 
-	left: 150px;
-    top: 875px; 
-}
-.sheep{ 
-	left: 870px; 
-	top: 875px; 
-}
-.pig{ 
-	left: 870px; 
-	top: 875px; 
-}
-
-.shop{
-	font-family: 'Amatic SC', cursive;
-	padding: 3px 7px;
-    font-size: 60px;
+.icon ul li label .icon-box {
+    width: 100px;
+    height: 75px;
+    background: linear-gradient(90deg, #ffffff 21.1%, #dee2e5 69%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px -2px 3px rgba(225,225,225,0.04),
+                3px 3px 3px rgba(0,0,0,0.2);
+    border-radius: 50px;
     cursor: pointer;
 }
-.img {
-    height: auto;
-    display: none;
-    width: 600px;
-    position: absolute;
-    left: 500px;
-    bottom: -1100px;
+.icon ul li label .icon-box {
+    font-size: 25px;
+    color: #eaedee;
+    transition: 0.5s;
 }
-.shop:hover {
-	color: darkolivegreen;
-	text-decoration: overline;
+.icon ul li label .icon-box:hover {
+    color: #00f3ff!important;
+    text-shadow: 0 0 15px greenyellow !important; /*f00 00f3ff 0f0*/
 }
-.shop:hover .img {
-  display: block;
-  right: 300px;
+.icon ul li label input[type="checkbox"]:checked ~ .icon-box {
+    box-shadow: 0 0 10px rgba(0, 243, 254, .3),
+                inset 3px 3px 3px rgba(0,0,0,0.2),
+                inset 3px 3px 10px rgba(0, 243, 254, .3);
+    border: 1px solid #fff;
+}
+.icon ul li label input[type="checkbox"]:checked ~ .icon-box {
+    color: darkolivegreen;
+    text-shadow: 0 0 15px greenyellow;
 }
 
 

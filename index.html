@@ -5,83 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="We're all about the natural, organic, and sustainable lifestyle, and we want to share with you a few of our favorite products and illustrations.">
-    <title> on the farm </title>
+    <title> Better MeatMap </title>
     <link rel="shortcut icon" type="image/jpg" href=""/>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
    crossorigin=""/>
-   
 </head>
 <body>
-	<div class="">
-		<h2 class="text-center onda">on the farm</h2>
-		<p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+	<div class="row greeting">
+		<h2 class="onda col">Better <br> MeatMap</h2>
+		<a class="about col text-center" href="#">About</a> 
+		<div class="col yourFarm">
+			<p class="listyou text-center">List your farm</p>
+		</div>
 	</div>
 
 	<section class="maps">
 		<div id="mapid"></div>
 	</section>
 	<hr>
+
 	<section class="meat">
-		<h3 class="text-center h3">our animals</h3>
-		<ul class="text-center">
-			<li>
-				<div class="inner">
-					beef
-					<img class="cow" src="https://www.thebigsmoke.com.au/wp-content/uploads/friendly-cows.jpg">
-				</div> 
-			</li>
-			<li>
-				<div class="inner">
-					chicken
-					<img class="chick" src="https://www.almanac.com/sites/default/files/users/AlmanacStaffArchive/rooster-and-hen_full_width.jpg">
-				</div> 
-			</li>
-			<li>
-				<div class="inner">
-					sheep
-					<img class="sheep" src="https://www.vegsoc.org/wp-content/uploads/2019/02/sheep-750x580.jpg">
-				</div> 
-			</li>
-			<li>
-				<div class="inner">
-					pig
-					<img class="pig" src="https://media.4-paws.org/8/f/1/6/8f1637d5b16e09507e1aed83bbc6fd6cd1e7b8e7/VIER%20PFOTEN_2016-11-16_028%20%281%29-1843x1275-1920x1328.jpg">
-				</div> 
-			</li>
-		</ul>
+		<div class="row">
+			<div class="col sources text-center">
+				<div >
+					<img class="farmImg" src="https://lh3.googleusercontent.com/GJ-Pax_4LyNa2CEYSMd2DNUxnkg7FHqNsD6YlzWtD4QO0Yi2wDakFBGieM24k_FVIra0NPkXUcKr8X3iQSAnCtzr8gSMY4PWkIbFIr9VS7rO0opM0i7eCwM_iSwEtglARZJW2-Y8au79Asj-HyjWGdhm38msEdk_HaiySvqRM1Clui8LoLdoUF1kBmkhWZg9EPDvwloL3X-7mncm4SmP0vpgnE6dBju0UUDSCKS1KGraVjEQ3lXHD9Excrft0ocyrsVw6TdkMkhSMpbfnHz9pLJQgsWsuuFryY0mdx2lb0Y3oTQV7-rnXhpMXTGpB5le-rGwgSjiziSJtyEgPP0tRDhxIyFI-ckeT7WVoUlGiKw2nSGSFdiw0IGKt3JMrAYPkru-0qHz6Ph1HmKLh18ziuMEpQHELEA4L-DB8h2YLJP5KsZz0ZQe25K_3tAjXU1R6TwNXxt0YjObrqPKqRBowJ6S60aZk-_t6UeBZvMfj5WgjUZ_4kjCkHKA3jeIxOY2hSNyZ0zLyGOqmnjQtUfbBYRbwRBbBqMKd_eJymbwFOYy1iLhODTtnk6zjQVdO62C85VztJRYXRDGsIqRmkhyxj9By4mGr70CQMsGJLSkLUTXyQbeyRcB-EnVb6OmJUvAzSVimHqOR3RY2AFXSnSoKqs3flS4-94h4Y7e8T7L1YJQ3eX5T0sGpr4iVmEx=w1600-h1200-no?authuser=1">
+				</div>
+				<h2>Farms</h2>
+			</div>
+			<div class="col sources text-center">
+				<div>
+					<img class="shopImg" src="https://cdn.torontolife.com/wp-content/uploads/2019/07/toronto-butcher-shop-chantecler-boucherie-parkdale-space.jpg">
+				</div>
+				<h2>Shops</h2>
+			</div>
+			<div class="col sources text-center">
+				<div>
+					<img class="restImg" src="https://static-friendbuy-com.s3.amazonaws.com/widget/butcher-box/landing-page/img/mobile_bg.jpg">
+				</div>
+				<h2>Restaurant</h2>
+			</div>
+		</div>
 	</section>
 	<hr>
+
 	<section class="stores">
-		<h3 class="h3">Where we sell</h3>
+		<div class="icon">
 		<ul>
-			<li>
-				<div class="shop">
-					restaurant
-					<img class="img" src="https://static-friendbuy-com.s3.amazonaws.com/widget/butcher-box/landing-page/img/mobile_bg.jpg">
-				</div> 
-			</li>
-			<li>
-				<div class="shop">
-					shop
-					<img class="img" src="https://cdn.torontolife.com/wp-content/uploads/2019/07/toronto-butcher-shop-chantecler-boucherie-parkdale-space.jpg">
-				</div> 
-			</li>
-			<li>
-				<div class="shop">
-					restaurant
-					<img class="img" src="https://www.skipsmeatmarket.com/wp-content/uploads/2018/11/blog_misc1-890x496.jpg">
-				</div> 
-			</li>
-			<li>
-				<div class="shop">
-					shop
-					<img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSIf74O9o2mx2tR2PSBLp8UVK6I5f-8d4R-c1qvcHD8MI0NplKG&usqp=CAU">
-				</div> 
-			</li>
+			 <li>
+                <label>
+                    <input type="checkbox" name="" checked>
+                      <div class="icon-box">
+                        <p>chicken</p>
+                      </div>
+                </label>
+              </li>
+              <li>
+                <label id="red">
+                  <input type="checkbox" name="" checked>
+                    <div class="icon-box">
+                      <p>pork</p>
+                    </div>
+                </label>
+              </li>
+             <li>
+              <label>
+                <input type="checkbox" name="" checked>
+                  <div class="icon-box">
+                    <p>beef</p>
+                  </div>
+              </label>
+             </li>
+             <li>
+              <label>
+                <input type="checkbox" name="" checked>
+                  <div class="icon-box">
+                    <p>lamb</p>
+                  </div>
+              </label>
+              </li>
 		</ul>
+		</div>
 	</section>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
