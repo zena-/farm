@@ -39,11 +39,17 @@
 }
 .greeting a:hover, a:active {
 	color: darkolivegreen;
+	text-decoration: none;
 }
 .about{
 	font-family: 'Indie Flower', cursive;
     font-size: 2rem;
     margin: 50px auto;
+}
+
+.pClick{
+	font-family: 'Indie Flower', cursive;
+	margin: -15px 10px 40px;
 }
 
 .listyou{
@@ -84,9 +90,41 @@ hr {
     margin-right: auto;*/
 }
 
-.sources h2 {
+.sources{
 	font-family: 'Indie Flower', cursive;
 }
+.sources label {
+	position: relative;
+}
+.sources label input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.sources label .icon-box {
+    width: 125px;
+	height: 125px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #ffffff 21.1%, #dee2e5 69%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px -2px 3px rgba(225,225,225,0.04),
+                3px 3px 3px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.sources label .icon-box {
+    transition: 0.5s;
+}
+.sources label input[type="checkbox"]:checked ~ .icon-box {
+    box-shadow: 0 0 10px rgba(0, 243, 254, .3), 
+    			inset 18px -7px 11px 8px rgba(0,0,0,0.2), 
+    			inset 3px 3px 10px rgba(0, 243, 254, .3);
+    border: 1px solid #0f0;
+    filter: brightness(0.7);
+}
+
+
 .farmImg{
 	border-radius: 50px;
 	/*background: url('https://lh3.googleusercontent.com/GJ-Pax_4LyNa2CEYSMd2DNUxnkg7FHqNsD6YlzWtD4QO0Yi2wDakFBGieM24k_FVIra0NPkXUcKr8X3iQSAnCtzr8gSMY4PWkIbFIr9VS7rO0opM0i7eCwM_iSwEtglARZJW2-Y8au79Asj-HyjWGdhm38msEdk_HaiySvqRM1Clui8LoLdoUF1kBmkhWZg9EPDvwloL3X-7mncm4SmP0vpgnE6dBju0UUDSCKS1KGraVjEQ3lXHD9Excrft0ocyrsVw6TdkMkhSMpbfnHz9pLJQgsWsuuFryY0mdx2lb0Y3oTQV7-rnXhpMXTGpB5le-rGwgSjiziSJtyEgPP0tRDhxIyFI-ckeT7WVoUlGiKw2nSGSFdiw0IGKt3JMrAYPkru-0qHz6Ph1HmKLh18ziuMEpQHELEA4L-DB8h2YLJP5KsZz0ZQe25K_3tAjXU1R6TwNXxt0YjObrqPKqRBowJ6S60aZk-_t6UeBZvMfj5WgjUZ_4kjCkHKA3jeIxOY2hSNyZ0zLyGOqmnjQtUfbBYRbwRBbBqMKd_eJymbwFOYy1iLhODTtnk6zjQVdO62C85VztJRYXRDGsIqRmkhyxj9By4mGr70CQMsGJLSkLUTXyQbeyRcB-EnVb6OmJUvAzSVimHqOR3RY2AFXSnSoKqs3flS4-94h4Y7e8T7L1YJQ3eX5T0sGpr4iVmEx=w1600-h1200-no?authuser=1');*/
@@ -156,7 +194,7 @@ hr {
     box-shadow: 0 0 10px rgba(0, 243, 254, .3),
                 inset 3px 3px 3px rgba(0,0,0,0.2),
                 inset 3px 3px 10px rgba(0, 243, 254, .3);
-    border: 1px solid #fff;
+    border: 1px solid #0f0;
 }
 .icon ul li label input[type="checkbox"]:checked ~ .icon-box {
     color: darkolivegreen;
@@ -164,21 +202,20 @@ hr {
 }
 
 footer{
-	background: #dee2e5;
+	background: #556b2f40;
 	font-family: 'Indie Flower', cursive;
 	padding: 20px;
 	margin-top: 60px; 
 }
 .deep{
 	font-size: 2rem;
-    border-radius: 20px;
     padding: 0px 17px;
-    background: linear-gradient(90deg, #ffffff 21.1%, #dee2e5 69%);
+    background: #556b2f1c;
 }
 .deep:hover {
-    box-shadow: inset -2px -2px 8px rgba(225,225,225,1),
-                inset -2px -2px 12px rgba(225,225,225,0.5),
-                inset 2px 2px 4px rgba(225,225,225,0.1),
+    box-shadow: inset -2px -2px 8px rgba(85,107,47,1),
+                inset -2px -2px 12px rgba(85,107,47,0.5),
+                inset 2px 2px 4px rgba(85,107,47,0.1),
                 inset 2px 2px 8px rgba(0,0,0,0.15);
     color: darkolivegreen;
 }
