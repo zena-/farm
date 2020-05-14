@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Architects+Daughter&display=swap');
 
 .onda{
 	font-family: 'Fredericka the Great', cursive;
@@ -8,7 +8,7 @@
 }
 
 .modal-body, .modal-title, .btn-secondary {
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Architects Daughter', cursive;
 }
 .modal {
 	transform-style: preserve-3d;
@@ -42,18 +42,18 @@
 	text-decoration: none;
 }
 .about{
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Architects Daughter', cursive;
     font-size: 2rem;
     margin: 50px auto;
 }
 
 .pClick{
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Architects Daughter', cursive;
 	margin: -15px 10px 40px;
 }
 
 .listyou{
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Architects Daughter', cursive;
 	margin: 10px;
     font-size: 40px;
     width: 190px;
@@ -91,7 +91,7 @@ hr {
 }
 
 .sources{
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Architects Daughter', cursive;
 }
 .sources label {
 	position: relative;
@@ -149,8 +149,6 @@ hr {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    /*left: 22rem;*/
-    width: max-content;
     margin: 4px auto;
 }
 .icon ul li {
@@ -182,18 +180,18 @@ hr {
 }
 .icon ul li label .icon-box {
     font-size: 25px;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Architects Daughter', cursive;
     color: #eaedee;
     transition: 0.5s;
 }
 .icon ul li label .icon-box:hover {
-    color: #00f3ff!important;
-    text-shadow: 0 0 15px greenyellow !important; /*f00 00f3ff 0f0*/
+    color: #00f3ff;
+    text-shadow: 0 0 15px greenyellow; 
 }
 .icon ul li label input[type="checkbox"]:checked ~ .icon-box {
-    box-shadow: 0 0 10px rgba(0, 243, 254, .3),
-                inset 3px 3px 3px rgba(0,0,0,0.2),
-                inset 3px 3px 10px rgba(0, 243, 254, .3);
+    box-shadow: 0 0 10px #28a74533, 
+    			inset 3px 3px 3px rgba(0,0,0,0.2), 
+    			inset 3px 3px 10px #1557246b;
     border: 1px solid #0f0;
 }
 .icon ul li label input[type="checkbox"]:checked ~ .icon-box {
@@ -203,14 +201,14 @@ hr {
 
 footer{
 	background: #556b2f40;
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Architects Daughter', cursive;
 	padding: 20px;
 	margin-top: 60px; 
 }
 .deep{
 	font-size: 2rem;
     padding: 0px 17px;
-    background: #556b2f1c;
+    background: #d5dacc;
 }
 .deep:hover {
     box-shadow: inset -2px -2px 8px rgba(85,107,47,1),
