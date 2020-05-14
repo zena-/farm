@@ -15,23 +15,7 @@
 }
 .modal .modal-body{
 	transform: perspective(100px) translateZ(13px);
-    filter: drop-shadow(2px 4px 6px black);
     padding: 35px;
-}
-.rotate{
-  animation: rotate 17s infinite ease-in-out;
-}
-
-@-webkit-keyframes rotate{
-  0% {
-  transform: perspective(1000px) rotateY(15deg);
-  }
-  50%{
-  transform: perspective(1000px) rotateX(10deg);
-  }
-  100% {
-  transform: perspective(1000px) rotateY(15deg);
-  }
 }
 
 .greeting a:link, a:visited {
@@ -200,7 +184,7 @@ hr {
 }
 
 footer{
-	background: #556b2f40;
+	background: #556b2f26;
 	font-family: 'Architects Daughter', cursive;
 	padding: 20px;
 	margin-top: 60px; 
@@ -208,7 +192,8 @@ footer{
 .deep{
 	font-size: 2rem;
     padding: 0px 17px;
-    background: #d5dacc;
+    background: #e5e9e0;
+    border-radius: 10px;
 }
 .deep:hover {
     box-shadow: inset -2px -2px 8px rgba(85,107,47,1),
